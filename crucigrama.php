@@ -102,22 +102,7 @@ class Record{
         </section>
     <h2>Crucigrama matemático</h2>
     
-    <section data-type="botonera">
-        <h2>Botonera</h2>
-        <button onclick="crucigrama.introduceElement(1)">1</button>
-        <button onclick="crucigrama.introduceElement(2)">2</button>
-        <button onclick="crucigrama.introduceElement(3)">3</button>
-        <button onclick="crucigrama.introduceElement(4)">4</button>
-        <button onclick="crucigrama.introduceElement(5)">5</button>
-        <button onclick="crucigrama.introduceElement(6)">6</button>
-        <button onclick="crucigrama.introduceElement(7)">7</button>
-        <button onclick="crucigrama.introduceElement(8)">8</button>
-        <button onclick="crucigrama.introduceElement(9)">9</button>
-        <button onclick="crucigrama.introduceElement('*')">*</button>
-        <button onclick="crucigrama.introduceElement('+')">+</button>
-        <button onclick="crucigrama.introduceElement('-')">-</button>
-        <button onclick="crucigrama.introduceElement('/')">/</button>
-    </section>
+    
 
     <script>
         var crucigrama= new Crucigrama("4,*,.,=,12,#,#,#,5,#,#,*,#,/,#,#,#,*,4,-"+
@@ -137,6 +122,23 @@ class Record{
             }
         });
     </script>
+
+<section data-type="botonera">
+        <h2>Botonera</h2>
+        <button onclick="crucigrama.introduceElement(1)">1</button>
+        <button onclick="crucigrama.introduceElement(2)">2</button>
+        <button onclick="crucigrama.introduceElement(3)">3</button>
+        <button onclick="crucigrama.introduceElement(4)">4</button>
+        <button onclick="crucigrama.introduceElement(5)">5</button>
+        <button onclick="crucigrama.introduceElement(6)">6</button>
+        <button onclick="crucigrama.introduceElement(7)">7</button>
+        <button onclick="crucigrama.introduceElement(8)">8</button>
+        <button onclick="crucigrama.introduceElement(9)">9</button>
+        <button onclick="crucigrama.introduceElement('*')">*</button>
+        <button onclick="crucigrama.introduceElement('+')">+</button>
+        <button onclick="crucigrama.introduceElement('-')">-</button>
+        <button onclick="crucigrama.introduceElement('/')">/</button>
+    </section>
     
 <?php
     $record = new Record();

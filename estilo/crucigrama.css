@@ -73,29 +73,52 @@ section[name="ranking"] ol{
     background-color: black;
 }
 
-@media (max-width: 799px){
-    /*Especificidad 011*/
-    section[data-type=botonera] {
-        display: flex;
-        gap: 1em;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-     /*Especificidad 012*/
-    section[data-type=botonera] h2 {
-        width: 100%;
-        text-align: center;
-    }
-     /*Especificidad 012*/
-    section[data-type=botonera] button {
-        width: calc(15% - 1em);
-        height: 4em;
-        text-align: center;
-        background-color: #000;
-        color: #FFF;
-    }
 
+/*especificidad 011*/
+section[data-type=botonera] {
+    display: none;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*especificidad 012*/
+section[data-type=botonera] h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/*especificidad 012*/
+section[data-type=botonera] button {
+    width: calc(15% - 1em);
+    height: 4em;
+    text-align: center;
+    background-color: #B1D4E0;
+    color: #0C2D48;
+}
+
+/*especificidad 012*/
+section[data-type=ayuda] {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+/*especificidad 012*/
+section[data-type=ayuda] > article {
+    width: 60%;
+    text-align: center;
+    background-color: #B1D4E0;
+    color: #0C2D48;
+    margin: 0 auto;
+}
+
+
+@media  screen and (max-width: 1200px) {
+    /*especificidad 011*/
+    section[data-type=botonera]{
+        display: flex; /* le cambio el display para que se vea la botonera en pantallas de  tablet y movil */
+    }
 }
 
 
