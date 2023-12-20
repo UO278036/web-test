@@ -13,9 +13,10 @@
     <meta name="keywords" content="Crucigrama, Matematico">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
     <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo_botonera.css">
     <link rel="stylesheet" type="text/css" href="estilo/layout.css">
     <link rel="stylesheet" type="text/css" href="estilo/crucigrama.css">
 
@@ -45,27 +46,12 @@
                 <li><a tabindex="9" accesskey="U" href="sudoku.html" title="Sudoku">Sudoku</a></li>
                 <li><a tabindex="10" accesskey="C" href="crucigrama.php" title="Crucigrama">Crucigrama</a></li>
                 <li><a tabindex="11" accesskey="P" href="api.html" title="Reproductor">Reproductor</a></li>    
-                <li><a tabindex="12" accesskey="P" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>   
+                <li><a tabindex="12" accesskey="D" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>   
             </ul>
         </section>
     <h2>Crucigrama matemático</h2>
-
-    <section data-type="botonera">
-        <h2>Botonera</h2>
-        <button onclick="crucigrama.introduceElement(1)">1</button>
-        <button onclick="crucigrama.introduceElement(2)">2</button>
-        <button onclick="crucigrama.introduceElement(3)">3</button>
-        <button onclick="crucigrama.introduceElement(4)">4</button>
-        <button onclick="crucigrama.introduceElement(5)">5</button>
-        <button onclick="crucigrama.introduceElement(6)">6</button>
-        <button onclick="crucigrama.introduceElement(7)">7</button>
-        <button onclick="crucigrama.introduceElement(8)">8</button>
-        <button onclick="crucigrama.introduceElement(9)">9</button>
-        <button onclick="crucigrama.introduceElement('*')">*</button>
-        <button onclick="crucigrama.introduceElement('+')">+</button>
-        <button onclick="crucigrama.introduceElement('-')">-</button>
-        <button onclick="crucigrama.introduceElement('/')">/</button>
-    </section>
+    
+    
 
     <script>
         var crucigrama= new Crucigrama("4,*,.,=,12,#,#,#,5,#,#,*,#,/,#,#,#,*,4,-"+
@@ -84,7 +70,24 @@
 
             }
         });
-    </script><main><p data-row="0" data-col="0" data-state="blocked">4</p><p data-row="0" data-col="1" data-state="clicked">*</p><p data-row="0" data-col="2" data-state="correct">9</p><p data-row="0" data-col="3" data-state="blocked">=</p><p data-row="0" data-col="4" data-state="blocked">36</p><p data-row="0" data-col="5" data-state="empty"></p><p data-row="0" data-col="6" data-state="empty"></p><p data-row="0" data-col="7" data-state="empty"></p><p data-row="0" data-col="8" data-state="blocked">25</p><p data-row="1" data-col="0" data-state="empty"></p><p data-row="1" data-col="1" data-state="empty"></p><p data-row="1" data-col="2" data-state="blocked">*</p><p data-row="1" data-col="3" data-state="empty"></p><p data-row="1" data-col="4"></p><p data-row="1" data-col="5" data-state="empty"></p><p data-row="1" data-col="6" data-state="empty"></p><p data-row="1" data-col="7" data-state="empty"></p><p data-row="1" data-col="8"></p><p data-row="2" data-col="0"></p><p data-row="2" data-col="1" data-state="blocked">-</p><p data-row="2" data-col="2"></p><p data-row="2" data-col="3" data-state="blocked">=</p><p data-row="2" data-col="4"></p><p data-row="2" data-col="5" data-state="empty"></p><p data-row="2" data-col="6" data-state="blocked">15</p><p data-row="2" data-col="7" data-state="empty"></p><p data-row="2" data-col="8"></p><p data-row="3" data-col="0" data-state="blocked">*</p><p data-row="3" data-col="1" data-state="empty"></p><p data-row="3" data-col="2" data-state="blocked">=</p><p data-row="3" data-col="3" data-state="empty"></p><p data-row="3" data-col="4" data-state="blocked">=</p><p data-row="3" data-col="5" data-state="empty"></p><p data-row="3" data-col="6"></p><p data-row="3" data-col="7" data-state="empty"></p><p data-row="3" data-col="8" data-state="blocked">=</p><p data-row="4" data-col="0"></p><p data-row="4" data-col="1" data-state="empty"></p><p data-row="4" data-col="2" data-state="blocked">18</p><p data-row="4" data-col="3" data-state="empty"></p><p data-row="4" data-col="4" data-state="blocked">6</p><p data-row="4" data-col="5" data-state="blocked">*</p><p data-row="4" data-col="6"></p><p data-row="4" data-col="7" data-state="blocked">=</p><p data-row="4" data-col="8" data-state="blocked">30</p><p data-row="5" data-col="0" data-state="blocked">=</p><p data-row="5" data-col="1" data-state="empty"></p><p data-row="5" data-col="2" data-state="empty"></p><p data-row="5" data-col="3" data-state="empty"></p><p data-row="5" data-col="4" data-state="empty"></p><p data-row="5" data-col="5" data-state="empty"></p><p data-row="5" data-col="6" data-state="blocked">=</p><p data-row="5" data-col="7" data-state="empty"></p><p data-row="5" data-col="8" data-state="empty"></p><p data-row="6" data-col="0" data-state="blocked">56</p><p data-row="6" data-col="1" data-state="empty"></p><p data-row="6" data-col="2" data-state="blocked">9</p><p data-row="6" data-col="3" data-state="blocked">-</p><p data-row="6" data-col="4"></p><p data-row="6" data-col="5" data-state="blocked">=</p><p data-row="6" data-col="6" data-state="blocked">3</p><p data-row="6" data-col="7" data-state="empty"></p><p data-row="6" data-col="8"></p><p data-row="7" data-col="0" data-state="empty"></p><p data-row="7" data-col="1" data-state="empty"></p><p data-row="7" data-col="2" data-state="blocked">*</p><p data-row="7" data-col="3" data-state="empty"></p><p data-row="7" data-col="4" data-state="blocked">+</p><p data-row="7" data-col="5" data-state="empty"></p><p data-row="7" data-col="6" data-state="empty"></p><p data-row="7" data-col="7" data-state="empty"></p><p data-row="7" data-col="8" data-state="blocked">*</p><p data-row="8" data-col="0" data-state="blocked">20</p><p data-row="8" data-col="1"></p><p data-row="8" data-col="2"></p><p data-row="8" data-col="3" data-state="blocked">=</p><p data-row="8" data-col="4" data-state="blocked">18</p><p data-row="8" data-col="5" data-state="empty"></p><p data-row="8" data-col="6" data-state="empty"></p><p data-row="8" data-col="7" data-state="empty"></p><p data-row="8" data-col="8"></p><p data-row="9" data-col="0" data-state="empty"></p><p data-row="9" data-col="1" data-state="empty"></p><p data-row="9" data-col="2" data-state="blocked">=</p><p data-row="9" data-col="3" data-state="empty"></p><p data-row="9" data-col="4" data-state="blocked">=</p><p data-row="9" data-col="5" data-state="empty"></p><p data-row="9" data-col="6" data-state="empty"></p><p data-row="9" data-col="7" data-state="empty"></p><p data-row="9" data-col="8" data-state="blocked">=</p><p data-row="10" data-col="0" data-state="empty"></p><p data-row="10" data-col="1" data-state="empty"></p><p data-row="10" data-col="2" data-state="blocked">18</p><p data-row="10" data-col="3" data-state="empty"></p><p data-row="10" data-col="4" data-state="blocked">24</p><p data-row="10" data-col="5"></p><p data-row="10" data-col="6"></p><p data-row="10" data-col="7" data-state="blocked">=</p><p data-row="10" data-col="8" data-state="blocked">72</p></main>
+    </script><main><p data-row="0" data-col="0" data-state="blocked">4</p><p data-row="0" data-col="1" data-state="correct">*</p><p data-row="0" data-col="2" data-state="correct">9</p><p data-row="0" data-col="3" data-state="blocked">=</p><p data-row="0" data-col="4" data-state="blocked">36</p><p data-row="0" data-col="5" data-state="empty"></p><p data-row="0" data-col="6" data-state="empty"></p><p data-row="0" data-col="7" data-state="empty"></p><p data-row="0" data-col="8" data-state="blocked">25</p><p data-row="1" data-col="0" data-state="empty"></p><p data-row="1" data-col="1" data-state="empty"></p><p data-row="1" data-col="2" data-state="blocked">*</p><p data-row="1" data-col="3" data-state="empty"></p><p data-row="1" data-col="4"></p><p data-row="1" data-col="5" data-state="empty"></p><p data-row="1" data-col="6" data-state="empty"></p><p data-row="1" data-col="7" data-state="empty"></p><p data-row="1" data-col="8"></p><p data-row="2" data-col="0"></p><p data-row="2" data-col="1" data-state="blocked">-</p><p data-row="2" data-col="2"></p><p data-row="2" data-col="3" data-state="blocked">=</p><p data-row="2" data-col="4"></p><p data-row="2" data-col="5" data-state="empty"></p><p data-row="2" data-col="6" data-state="blocked">15</p><p data-row="2" data-col="7" data-state="empty"></p><p data-row="2" data-col="8"></p><p data-row="3" data-col="0" data-state="blocked">*</p><p data-row="3" data-col="1" data-state="empty"></p><p data-row="3" data-col="2" data-state="blocked">=</p><p data-row="3" data-col="3" data-state="empty"></p><p data-row="3" data-col="4" data-state="blocked">=</p><p data-row="3" data-col="5" data-state="empty"></p><p data-row="3" data-col="6"></p><p data-row="3" data-col="7" data-state="empty"></p><p data-row="3" data-col="8" data-state="blocked">=</p><p data-row="4" data-col="0"></p><p data-row="4" data-col="1" data-state="empty"></p><p data-row="4" data-col="2" data-state="blocked">18</p><p data-row="4" data-col="3" data-state="empty"></p><p data-row="4" data-col="4" data-state="blocked">6</p><p data-row="4" data-col="5" data-state="blocked">*</p><p data-row="4" data-col="6"></p><p data-row="4" data-col="7" data-state="blocked">=</p><p data-row="4" data-col="8" data-state="blocked">30</p><p data-row="5" data-col="0" data-state="blocked">=</p><p data-row="5" data-col="1" data-state="empty"></p><p data-row="5" data-col="2" data-state="empty"></p><p data-row="5" data-col="3" data-state="empty"></p><p data-row="5" data-col="4" data-state="empty"></p><p data-row="5" data-col="5" data-state="empty"></p><p data-row="5" data-col="6" data-state="blocked">=</p><p data-row="5" data-col="7" data-state="empty"></p><p data-row="5" data-col="8" data-state="empty"></p><p data-row="6" data-col="0" data-state="blocked">56</p><p data-row="6" data-col="1" data-state="empty"></p><p data-row="6" data-col="2" data-state="blocked">9</p><p data-row="6" data-col="3" data-state="blocked">-</p><p data-row="6" data-col="4"></p><p data-row="6" data-col="5" data-state="blocked">=</p><p data-row="6" data-col="6" data-state="blocked">3</p><p data-row="6" data-col="7" data-state="empty"></p><p data-row="6" data-col="8"></p><p data-row="7" data-col="0" data-state="empty"></p><p data-row="7" data-col="1" data-state="empty"></p><p data-row="7" data-col="2" data-state="blocked">*</p><p data-row="7" data-col="3" data-state="empty"></p><p data-row="7" data-col="4" data-state="blocked">+</p><p data-row="7" data-col="5" data-state="empty"></p><p data-row="7" data-col="6" data-state="empty"></p><p data-row="7" data-col="7" data-state="empty"></p><p data-row="7" data-col="8" data-state="blocked">*</p><p data-row="8" data-col="0" data-state="blocked">20</p><p data-row="8" data-col="1"></p><p data-row="8" data-col="2"></p><p data-row="8" data-col="3" data-state="blocked">=</p><p data-row="8" data-col="4" data-state="blocked">18</p><p data-row="8" data-col="5" data-state="empty"></p><p data-row="8" data-col="6" data-state="empty"></p><p data-row="8" data-col="7" data-state="empty"></p><p data-row="8" data-col="8"></p><p data-row="9" data-col="0" data-state="empty"></p><p data-row="9" data-col="1" data-state="empty"></p><p data-row="9" data-col="2" data-state="blocked">=</p><p data-row="9" data-col="3" data-state="empty"></p><p data-row="9" data-col="4" data-state="blocked">=</p><p data-row="9" data-col="5" data-state="empty"></p><p data-row="9" data-col="6" data-state="empty"></p><p data-row="9" data-col="7" data-state="empty"></p><p data-row="9" data-col="8" data-state="blocked">=</p><p data-row="10" data-col="0" data-state="empty"></p><p data-row="10" data-col="1" data-state="empty"></p><p data-row="10" data-col="2" data-state="blocked">18</p><p data-row="10" data-col="3" data-state="empty"></p><p data-row="10" data-col="4" data-state="blocked">24</p><p data-row="10" data-col="5"></p><p data-row="10" data-col="6"></p><p data-row="10" data-col="7" data-state="blocked">=</p><p data-row="10" data-col="8" data-state="blocked">72</p></main>
+
+<section data-type="botonera">
+        <h2>Botonera</h2>
+        <button onclick="crucigrama.introduceElement(1)">1</button>
+        <button onclick="crucigrama.introduceElement(2)">2</button>
+        <button onclick="crucigrama.introduceElement(3)">3</button>
+        <button onclick="crucigrama.introduceElement(4)">4</button>
+        <button onclick="crucigrama.introduceElement(5)">5</button>
+        <button onclick="crucigrama.introduceElement(6)">6</button>
+        <button onclick="crucigrama.introduceElement(7)">7</button>
+        <button onclick="crucigrama.introduceElement(8)">8</button>
+        <button onclick="crucigrama.introduceElement(9)">9</button>
+        <button onclick="crucigrama.introduceElement('*')">*</button>
+        <button onclick="crucigrama.introduceElement('+')">+</button>
+        <button onclick="crucigrama.introduceElement('-')">-</button>
+        <button onclick="crucigrama.introduceElement('/')">/</button>
+    </section>
     
 
 </body></html>

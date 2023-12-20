@@ -12,6 +12,7 @@
     <link rel="icon" type="image/x-icon" href="/multimedia/imagenes/favicon.ico">
 
     <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
             <h2>Quien soy</h2>
             <p>Soy Raúl Fernández España, tengo 22 años y soy un estudiante de la escuela de ingeniería del Software de la Universidad de Oviedo</p>
             <picture>
-                <source media="(max-width: 465px)" srcset="multimedia/imagenes/RaulImg-465.jpeg">
+                <source media="(max-width: 465px)" srcset="multimedia/imagenes/RaulImg-465.png">
                 <source media="(min-width: 799px)" srcset="multimedia/imagenes/RaulImg-799.jpeg">
                 <img src="multimedia/imagenes/RaulImg.jpeg" alt="Imagen Raúl Fernández España">
             </picture>
@@ -121,33 +122,56 @@
             <h2>Temperaturas medias de mi ciudad de nacimiento</h2>
             <p>La siguiente tabla, muestra las temperaturas medias de la ciudad de Oviedo durante los ultimos 10 años</p>
             <table>
+                <caption>Temperaturas medias anuales</caption>
                 <tbody><tr>
-                    <th scope="col" id="Años">Años</th>
-                    <th scope="col" id="2022">2022</th>
-                    <th scope="col" id="2021">2021</th>
-                    <th scope="col" id="2020">2020</th>
-                    <th scope="col" id="2019">2019</th>
-                    <th scope="col" id="2018">2018</th>
-                    <th scope="col" id="2017">2017</th>
-                    <th scope="col" id="2016">2016</th>
-                    <th scope="col" id="2015">2015</th>
-                    <th scope="col" id="2014">2014</th>
-                    <th scope="col" id="2013">2013</th>
+                    <th id="año" scope="col">Año</th>
+                    <th id="temperatura" scope="col">Temperatura</th>
                 </tr>
                 <tr>
-                    <th scope="row" id="Temperaturas">Temperaturas</th>
-                    <td headers="Temperaturas 2022">14.0°C</td>
-                    <td headers="Temperaturas 2021">13.0°C</td>
-                    <td headers="Temperaturas 2020">13.8°C</td>
-                    <td headers="Temperaturas 2019">13.2°C</td>
-                    <td headers="Temperaturas 2018">13.1°C</td>
-                    <td headers="Temperaturas 2017">13.3°C</td>
-                    <td headers="Temperaturas 2016">13.2°C</td>
-                    <td headers="Temperaturas 2015">13.4°C</td>
-                    <td headers="Temperaturas 2014">13.5°C</td>
-                    <td headers="Temperaturas 2013">12.3°C</td>
+                    <th id="2012" scope="row" headers="año">2012</th>
+                    <td headers="2012 temperatura">12.6</td>
                 </tr>
-            </tbody></table>  
+                <tr>
+                    <th id="2013" scope="row" headers="año">2013</th>
+                    <td headers="2013 temperatura">12.3</td>
+                </tr>
+                <tr>
+                    <th id="2014" scope="row" headers="año">2014</th>
+                    <td headers="2014 temperatura">13.5</td>
+                </tr>
+                <tr>
+                    <th id="2015" scope="row" headers="año">2015</th>
+                    <td headers="2015 temperatura">13.4</td>
+                </tr>
+                <tr>
+                    <th id="2016" scope="row" headers="año">2016</th>
+                    <td headers="2016 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th id="2017" scope="row" headers="año">2017</th>
+                    <td headers="2017 temperatura">13.3</td>
+                </tr>
+                <tr>
+                    <th id="2018" scope="row" headers="año">2018</th>
+                    <td headers="2018 temperatura">13.1</td>
+                </tr>
+                <tr>
+                    <th id="2019" scope="row" headers="año">2019</th>
+                    <td headers="2019 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th id="2020" scope="row" headers="año">2020</th>
+                    <td headers="2020 temperatura">13.8</td>
+                </tr>
+                <tr>
+                    <th id="2021" scope="row" headers="año">2021</th>
+                    <td headers="2021 temperatura">13.0</td>
+                </tr>
+                <tr>
+                    <th id="2022" scope="row" headers="año">2022</th>
+                    <td headers="2022 temperatura">14.0</td>
+                </tr>
+            </tbody></table>
         </article>      
     </main>
 

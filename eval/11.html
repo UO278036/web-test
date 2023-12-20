@@ -1,22 +1,33 @@
 
 <!DOCTYPE HTML>
 <html lang="es"><head>
-        <!-- Datos que describen el documento -->
-        <meta charset="UTF-8">
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <link rel="icon" href="multimedia/imagenes/favicon.ico">
+    <title>Escritorio Virtual - Crucigrama</title>
 
-        <!--Metadatos de los documentos HTML5-->
-        <meta name="author" content="Raúl Fernández España">
-        <meta name="description" content="Reproductor de audios y musica">
-        <meta name="keywords" content="Archivos, Practica, Reproductor">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Api - MusicPlayer</title>
-        <script src="js/api.js"></script>
-        <link rel="stylesheet" type="text/css" href="estilo/api.css">
-       
-    </head>
+    <meta name="author" content="Raúl Fernández España">
 
-    <body>
-        <header>
+    <meta name="description" content="Crucigrama">
+
+    <meta name="keywords" content="Crucigrama, Matematico">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
+    <!-- añadir el elemento link de enlace a la hoja de estilo dentro del <head> del documento html -->
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo_botonera.css">
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css">
+    <link rel="stylesheet" type="text/css" href="estilo/crucigrama.css">
+
+    <script src="js/crucigrama.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
             <h1>Escritorio Virtual</h1>
             <nav>
             <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
@@ -35,39 +46,48 @@
                 <li><a tabindex="9" accesskey="U" href="sudoku.html" title="Sudoku">Sudoku</a></li>
                 <li><a tabindex="10" accesskey="C" href="crucigrama.php" title="Crucigrama">Crucigrama</a></li>
                 <li><a tabindex="11" accesskey="P" href="api.html" title="Reproductor">Reproductor</a></li>    
-                <li><a tabindex="12" accesskey="P" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>   
+                <li><a tabindex="12" accesskey="D" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>   
             </ul>
         </section>
-
-        <article ondrop="reproductor.dropHandler(event);" ondragover="reproductor.dragOverHandler(event);">
-            <h2>Instrucciones: </h2>
-            <p>
-                Para seleccionar la canción deseada puede seleccionarla pulsando el boton "Elegir cancion" y navegando
-                por el explorador de archivos de su equipo, o puede arrastrar la canción deseada dentro de este recuadro naranja.
-            </p>
-
-            <p>
-                Ademas puede pausar y reanudar la musica con los botones de la zona de control
-            </p>
-            <h2>Selección de canción: </h2>
-            <p>
-                Puede seleccionar otra canción en cualquier momento
-            </p>
-            <section>
-                <h3>Eleccion de canción: </h3>
-                <label for="musi">Seleccione la cancion a reproducir </label>
-                <input type="file" id="musi" accept="audio/*" onchange="reproductor.leerArchivo(this.files);">
-            </section>
-           
-        </article>
-        <section>
-        <h2>
-            Control sobre canciones
-        </h2>
-            <input type="button" value="Reproducir" onclick="reproductor.play()">
-            <input type="button" value="Reanudar ▶" onclick="reproductor.reanudar()">
-            <input type="button" value="Pausar ◼" onclick="reproductor.stop()">
-            <input type="button" value="Eliminar Canción" onclick="reproductor.eliminarCancion()">
-        </section>
+    <h2>Crucigrama matemático</h2>
     
+    
+
+    <script>
+        var crucigrama= new Crucigrama("4,*,.,=,12,#,#,#,5,#,#,*,#,/,#,#,#,*,4,-"+
+        ",.,=,.,#,15,#,.,*,#,=,#,=,#,/,#,=,.,#,3,#,4,*,.,=,20,=,#,#,#,#,#,=,#,#,8,#,9,-,.,=,3,#,.,#,#,-"+
+        ",#,+,#,#,#,*,6,/,.,=,.,#,#,#,.,#,#,=,#,=,#,#,#,=,#,#,6,#,8,*,.,=,16");
+        crucigrama.paintMathword();
+        document.addEventListener('keydown', function (event) {
+
+            var symbols=['+','-','/','*'];
+            if ((event.key >= '1' && event.key <= '9') || symbols.includes(event.key)) {
+                if (crucigrama.selectedCell===null) {
+                    alert('Seleccione una celda antes de introducir un número.');
+                }else {
+                    crucigrama.introduceElement(event.key);
+                }
+
+            }
+        });
+    </script><main><p data-row="0" data-col="0" data-state="blocked">4</p><p data-row="0" data-col="1" data-state="clicked">*</p><p data-row="0" data-col="2" data-state="correct">9</p><p data-row="0" data-col="3" data-state="blocked">=</p><p data-row="0" data-col="4" data-state="blocked">36</p><p data-row="0" data-col="5" data-state="empty"></p><p data-row="0" data-col="6" data-state="empty"></p><p data-row="0" data-col="7" data-state="empty"></p><p data-row="0" data-col="8" data-state="blocked">25</p><p data-row="1" data-col="0" data-state="empty"></p><p data-row="1" data-col="1" data-state="empty"></p><p data-row="1" data-col="2" data-state="blocked">*</p><p data-row="1" data-col="3" data-state="empty"></p><p data-row="1" data-col="4"></p><p data-row="1" data-col="5" data-state="empty"></p><p data-row="1" data-col="6" data-state="empty"></p><p data-row="1" data-col="7" data-state="empty"></p><p data-row="1" data-col="8"></p><p data-row="2" data-col="0"></p><p data-row="2" data-col="1" data-state="blocked">-</p><p data-row="2" data-col="2"></p><p data-row="2" data-col="3" data-state="blocked">=</p><p data-row="2" data-col="4"></p><p data-row="2" data-col="5" data-state="empty"></p><p data-row="2" data-col="6" data-state="blocked">15</p><p data-row="2" data-col="7" data-state="empty"></p><p data-row="2" data-col="8"></p><p data-row="3" data-col="0" data-state="blocked">*</p><p data-row="3" data-col="1" data-state="empty"></p><p data-row="3" data-col="2" data-state="blocked">=</p><p data-row="3" data-col="3" data-state="empty"></p><p data-row="3" data-col="4" data-state="blocked">=</p><p data-row="3" data-col="5" data-state="empty"></p><p data-row="3" data-col="6"></p><p data-row="3" data-col="7" data-state="empty"></p><p data-row="3" data-col="8" data-state="blocked">=</p><p data-row="4" data-col="0"></p><p data-row="4" data-col="1" data-state="empty"></p><p data-row="4" data-col="2" data-state="blocked">18</p><p data-row="4" data-col="3" data-state="empty"></p><p data-row="4" data-col="4" data-state="blocked">6</p><p data-row="4" data-col="5" data-state="blocked">*</p><p data-row="4" data-col="6"></p><p data-row="4" data-col="7" data-state="blocked">=</p><p data-row="4" data-col="8" data-state="blocked">30</p><p data-row="5" data-col="0" data-state="blocked">=</p><p data-row="5" data-col="1" data-state="empty"></p><p data-row="5" data-col="2" data-state="empty"></p><p data-row="5" data-col="3" data-state="empty"></p><p data-row="5" data-col="4" data-state="empty"></p><p data-row="5" data-col="5" data-state="empty"></p><p data-row="5" data-col="6" data-state="blocked">=</p><p data-row="5" data-col="7" data-state="empty"></p><p data-row="5" data-col="8" data-state="empty"></p><p data-row="6" data-col="0" data-state="blocked">56</p><p data-row="6" data-col="1" data-state="empty"></p><p data-row="6" data-col="2" data-state="blocked">9</p><p data-row="6" data-col="3" data-state="blocked">-</p><p data-row="6" data-col="4"></p><p data-row="6" data-col="5" data-state="blocked">=</p><p data-row="6" data-col="6" data-state="blocked">3</p><p data-row="6" data-col="7" data-state="empty"></p><p data-row="6" data-col="8"></p><p data-row="7" data-col="0" data-state="empty"></p><p data-row="7" data-col="1" data-state="empty"></p><p data-row="7" data-col="2" data-state="blocked">*</p><p data-row="7" data-col="3" data-state="empty"></p><p data-row="7" data-col="4" data-state="blocked">+</p><p data-row="7" data-col="5" data-state="empty"></p><p data-row="7" data-col="6" data-state="empty"></p><p data-row="7" data-col="7" data-state="empty"></p><p data-row="7" data-col="8" data-state="blocked">*</p><p data-row="8" data-col="0" data-state="blocked">20</p><p data-row="8" data-col="1"></p><p data-row="8" data-col="2"></p><p data-row="8" data-col="3" data-state="blocked">=</p><p data-row="8" data-col="4" data-state="blocked">18</p><p data-row="8" data-col="5" data-state="empty"></p><p data-row="8" data-col="6" data-state="empty"></p><p data-row="8" data-col="7" data-state="empty"></p><p data-row="8" data-col="8"></p><p data-row="9" data-col="0" data-state="empty"></p><p data-row="9" data-col="1" data-state="empty"></p><p data-row="9" data-col="2" data-state="blocked">=</p><p data-row="9" data-col="3" data-state="empty"></p><p data-row="9" data-col="4" data-state="blocked">=</p><p data-row="9" data-col="5" data-state="empty"></p><p data-row="9" data-col="6" data-state="empty"></p><p data-row="9" data-col="7" data-state="empty"></p><p data-row="9" data-col="8" data-state="blocked">=</p><p data-row="10" data-col="0" data-state="empty"></p><p data-row="10" data-col="1" data-state="empty"></p><p data-row="10" data-col="2" data-state="blocked">18</p><p data-row="10" data-col="3" data-state="empty"></p><p data-row="10" data-col="4" data-state="blocked">24</p><p data-row="10" data-col="5"></p><p data-row="10" data-col="6"></p><p data-row="10" data-col="7" data-state="blocked">=</p><p data-row="10" data-col="8" data-state="blocked">72</p></main>
+
+<section data-type="botonera">
+        <h2>Botonera</h2>
+        <button onclick="crucigrama.introduceElement(1)">1</button>
+        <button onclick="crucigrama.introduceElement(2)">2</button>
+        <button onclick="crucigrama.introduceElement(3)">3</button>
+        <button onclick="crucigrama.introduceElement(4)">4</button>
+        <button onclick="crucigrama.introduceElement(5)">5</button>
+        <button onclick="crucigrama.introduceElement(6)">6</button>
+        <button onclick="crucigrama.introduceElement(7)">7</button>
+        <button onclick="crucigrama.introduceElement(8)">8</button>
+        <button onclick="crucigrama.introduceElement(9)">9</button>
+        <button onclick="crucigrama.introduceElement('*')">*</button>
+        <button onclick="crucigrama.introduceElement('+')">+</button>
+        <button onclick="crucigrama.introduceElement('-')">-</button>
+        <button onclick="crucigrama.introduceElement('/')">/</button>
+    </section>
+    
+
 </body></html>

@@ -1,73 +1,76 @@
 
 <!DOCTYPE HTML>
-<html lang="es" coupert-item="9AF8D9A4E502F3784AD24272D81F0381"><head>
-        <!-- Datos que describen el documento -->
+<html lang="es"><head>
         <meta charset="UTF-8">
-
-        <!--Metadatos de los documentos HTML5-->
         <meta name="author" content="Raúl Fernández España">
-        <meta name="description" content="Reproductor de audios y musica">
-        <meta name="keywords" content="Archivos, Practica, Reproductor">
+        <meta name="description" content="Documento para consultas a un videoclub">
+        <meta name="keywords" content="Videoclub, Consultas">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Api - MusicPlayer</title>
-        <script src="js/api.js"></script>
-        <link rel="stylesheet" type="text/css" href="estilo/api.css">
-       
-    <link type="text/css" rel="stylesheet" href="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://dagdlcijhfbmgkjokkjicnnfimlebcll/page_context.js"></script></head>
-
-    <body screen_capture_injected="true">
-        <header>
+        <title>Escritorio Virtual - Videoclub</title>
+        <link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+        <link rel="icon" href="../multimedia/imagenes/favicon.ico">
+    </head>
+    <body>
+    <header>
             <h1>Escritorio Virtual</h1>
             <nav>
-            <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
-                <a title="Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
-                <a title="Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
-                <a title="Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
-                <a title="Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
-                <a title="Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
-                <a title="Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+            <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="../index.html">Inicio</a>
+                <a title="Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="../sobremi.html">Sobre Mi</a>
+                <a title="Acceda a la página de Noticias" accesskey="N" tabindex="3" href="../noticias.html">Noticias</a>
+                <a title="Acceda a la página de Agenda" accesskey="A" tabindex="4" href="../agenda.html">Agenda</a>
+                <a title="Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="../meteorologia.html">Meteorología</a>
+                <a title="Acceda a la página de Viajes" accesskey="V" tabindex="6" href="../viajes.php">Viajes</a>
+                <a title="Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="../juegos.html">Juegos</a>
             </nav>
-        </header>
+    </header>
         <section>
             <h2>Juegos</h2>
             <ul>
-            <a tabindex="8" accesskey="E" href="memoria.html" title="Memoria">Memoria</a>
-                <a tabindex="9" accesskey="U" href="sudoku.html" title="Sudoku">Sudoku</a>
-                <a tabindex="10" accesskey="C" href="crucigrama.php" title="Crucigrama">Crucigrama</a>
-                <a tabindex="11" accesskey="P" href="api.html" title="Reproductor">Reproductor</a>    
-                <a tabindex="12" accesskey="P" href="php/videoclub.php" title="Videoclub">Videoclub</a>   
+                <li><a tabindex="8" accesskey="E" href="../memoria.html" title="Memoria">Memoria</a></li>
+                <li><a tabindex="9" accesskey="U" href="../sudoku.html" title="Sudoku">Sudoku</a></li>
+                <li><a tabindex="10" accesskey="C" href="../crucigrama.php" title="Crucigrama">Crucigrama</a></li>
+                <li><a tabindex="11" accesskey="P" href="../api.html" title="Reproductor">Reproductor</a></li>    
+                <li><a tabindex="12" accesskey="D" href="videoclub.php" title="Videoclub">Videoclub</a></li>    
             </ul>
         </section>
+    <main>
+        <h2>Consulta de disponibilidad de películas</h2>
+        <!-- Formularios para importar, exportar, y consultar películas -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="importarCSV">Importar CSV para la carga de datos y descargar datos insertados</label>
+            <input id="importarCSV" name="importarCSV" type="file" accept=".csv">
+            <input type="submit" name="importar_csv" value="Importar">
+        </form>
+        <form action="#" method="post">
+            <label for="exportarCSV">Exportar datos del videoclub</label>
+            <input id="exportarCSV" type="submit" name="exportar_csv" value="Exportar">
+        </form>
+        <form action="#" method="post">
+            <label for="director">Consultar películas del director:</label>
+            <input id="director" name="director" type="text" placeholder="Ejemplo: Spielberg">
+            <input id="consultarPorDirector" type="submit" name="consultar_por_director" value="Buscar">
+        </form>
+        <form action="#" method="post">
+            <label for="consultaInicial">Consultar películas</label>
+            <input id="consultaInicial" type="submit" name="consulta_inicial" value="Buscar">
+        </form>
+                                <h2>Añadir Nuevo Cliente</h2>
+        <form action="biblioteca.php" method="post">
+            <label for="idCliente">ID Cliente:</label>
+            <input type="text" id="idCliente" name="idCliente" required="">
 
-        <article ondrop="reproductor.dropHandler(event);" ondragover="reproductor.dragOverHandler(event);">
-            <h2>Instrucciones: </h2>
-            <p>
-                Para seleccionar la canción deseada puede seleccionarla pulsando el boton "Elegir cancion" y navegando
-                por el explorador de archivos de su equipo, o puede arrastrar la canción deseada dentro de este recuadro naranja.
-            </p>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required="">
 
-            <p>
-                Ademas puede pausar y reanudar la musica con los botones de la zona de control
-            </p>
-            <h2>Selección de canción: </h2>
-            <p>
-                Puede seleccionar otra canción en cualquier momento
-            </p>
-            <section>
-                <h3>Eleccion de canción: </h3>
-                <label for="musi">Seleccione la cancion a reproducir </label>
-                <input type="file" id="musi" accept="audio/*" onchange="reproductor.leerArchivo(this.files);">
-            </section>
-           
-        </article>
-        <section>
-        <h2>
-            Control sobre canciones
-        </h2>
-            <input type="button" value="Reproducir" onclick="reproductor.play()">
-            <input type="button" value="Reanudar ▶" onclick="reproductor.reanudar()">
-            <input type="button" value="Pausar ◼" onclick="reproductor.stop()">
-            <input type="button" value="Eliminar Canción" onclick="reproductor.eliminarCancion()">
-        </section>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required="">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required="">
+
+            <input type="submit" name="añadir_cliente" value="Añadir Cliente">
+        </form>
+
+    </main>
     
 </body></html>
