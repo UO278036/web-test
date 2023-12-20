@@ -1,0 +1,73 @@
+
+<!DOCTYPE HTML>
+<html lang="es"><head>
+        <!-- Datos que describen el documento -->
+        <meta charset="UTF-8">
+
+        <!--Metadatos de los documentos HTML5-->
+        <meta name="author" content="Raúl Fernández España">
+        <meta name="description" content="Reproductor de audios y musica">
+        <meta name="keywords" content="Archivos, Practica, Reproductor">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Api - MusicPlayer</title>
+        <script src="js/api.js"></script>
+        <link rel="stylesheet" type="text/css" href="estilo/api.css">
+       
+    </head>
+
+    <body>
+        <header>
+            <h1>Escritorio Virtual</h1>
+            <nav>
+            <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+                <a title="Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+                <a title="Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+                <a title="Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+                <a title="Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+                <a title="Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+                <a title="Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+            </nav>
+        </header>
+        <section>
+            <h2>Juegos</h2>
+            <ul>
+                <li><a tabindex="8" accesskey="E" href="memoria.html" title="Memoria">Memoria</a></li>
+                <li><a tabindex="9" accesskey="U" href="sudoku.html" title="Sudoku">Sudoku</a></li>
+                <li><a tabindex="10" accesskey="C" href="crucigrama.php" title="Crucigrama">Crucigrama</a></li>
+                <li><a tabindex="11" accesskey="P" href="api.html" title="Reproductor">Reproductor</a></li>    
+                <li><a tabindex="12" accesskey="P" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>   
+            </ul>
+        </section>
+
+        <article ondrop="reproductor.dropHandler(event);" ondragover="reproductor.dragOverHandler(event);">
+            <h2>Instrucciones: </h2>
+            <p>
+                Para seleccionar la canción deseada puede seleccionarla pulsando el boton "Elegir cancion" y navegando
+                por el explorador de archivos de su equipo, o puede arrastrar la canción deseada dentro de este recuadro naranja.
+            </p>
+
+            <p>
+                Ademas puede pausar y reanudar la musica con los botones de la zona de control
+            </p>
+            <h2>Selección de canción: </h2>
+            <p>
+                Puede seleccionar otra canción en cualquier momento
+            </p>
+            <section>
+                <h3>Eleccion de canción: </h3>
+                <label for="musi">Seleccione la cancion a reproducir </label>
+                <input type="file" id="musi" accept="audio/*" onchange="reproductor.leerArchivo(this.files);">
+            </section>
+           
+        </article>
+        <section>
+        <h2>
+            Control sobre canciones
+        </h2>
+            <input type="button" value="Reproducir" onclick="reproductor.play()">
+            <input type="button" value="Reanudar ▶" onclick="reproductor.reanudar()">
+            <input type="button" value="Pausar ◼" onclick="reproductor.stop()">
+            <input type="button" value="Eliminar Canción" onclick="reproductor.eliminarCancion()">
+        </section>
+    
+</body></html>

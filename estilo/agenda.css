@@ -1,0 +1,74 @@
+
+/*Especificidad 012*/
+body section:first-of-type {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+/*Especificidad 003*/
+body section article {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(3, .5fr);
+    background-color: #E8EEF2; /*Hereda el color del primer plano de body */
+    color: black;
+    border-radius: 1em;
+    padding: 1em;
+    max-width: 39em;
+    border: 0.3em solid #071330;
+}
+/*Especificidad 002*/
+body button {
+    margin-bottom: 2em;
+    cursor: pointer;
+}
+/*Especificidad 012*/
+article p[data-element="numero"] {
+    margin: 0;
+    align-self: end;
+}
+/*Especificidad 012*/
+article h4[data-element="nombreCarrera"] {
+    width: 100%;
+}
+/*Especificidad 012*/
+article p[data-element="nombreCircuito"] {
+
+    width: 100%;
+}
+/*Especificidad 012*/
+article p[data-element="coordenadasCircuito"] {
+
+    width: 100%;
+    text-align: end;
+    font-size: 0.8em;
+    margin: 0;
+    align-self: flex-start;
+}
+/*Especificidad 012*/
+article p[data-element="fecha"] {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    align-self: end;
+}
+/*Especificidad 012*/
+article p[data-element="lugar"] {
+
+    width: 100%;
+    text-align: end;
+    margin: 0;
+    align-self: end;
+}
+/*Especificidad 012*/
+article a[data-element="enlace"] {
+
+    justify-self: end;
+    font-size: 0.8em;
+    align-self: center;
+    width:fit-content;
+    text-align: end;
+}
+
+

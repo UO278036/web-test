@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points=
+"
+100,343.6
+100,243.6
+200.0,205.89999999999998
+275.0,205.8
+525.0,200.0
+525.0,343.6
+100,343.6
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x="100" y="404.36" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x="200.0" y="404.36" style="writing-mode: tb; glyph-orientation-vertical: 0;">Cascada principal de Bamingui</text>
+<text x="275.0" y="404.36" style="writing-mode: tb; glyph-orientation-vertical: 0;">Sendero Escénico de Bamingui</text>
+<text x="525.0" y="404.36" style="writing-mode: tb; glyph-orientation-vertical: 0;">Área de Picnic junto a las Cascadas</text>
+</svg>

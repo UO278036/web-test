@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rutas xsi:schemaLocation="http://www.uniovi.es rutas.xsd"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.uniovi.es">
+   <ruta nombre = "CentroAfriacana" >
+        <tipoRuta>Naturaleza</tipoRuta>
+        <medioDetransporte>A pie</medioDetransporte>
+        <fechaDeinicio>2023-11-25</fechaDeinicio>
+        <horaDeinicio>13:00:00</horaDeinicio>
+
+        <duracion>4 horas</duracion>
+        <agencia>Viaboo</agencia>
+        <descripcion> República Centroafricana es una aventura emocionante y única. Es una experiencia única que ofrece la oportunidad de descubrir algunos de los mejores paisajes y 
+        culturas de la región. Sin embargo, los viajeros deben estar preparados para los retos de la carretera.</descripcion>
+        <personasAdecuadas>Personas aventureras y sin miedo a la Naturaleza</personasAdecuadas>
+        <InicioRutaLugar>BanguiBoda</InicioRutaLugar>
+        <InicioRutaDireccion>Provincia de Bangui</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>14.666667</longitud>
+            <latitud>5.166667</latitud>
+            <altitud>600</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://viaboo.com/es/roadtrips/Africa/Central_Africa/CAR/Grandtour</referenciasYBibliografia>
+            <referenciasYBibliografia>http://blog.kananga.com/ruta-kananga-abismo-verde-reserva-dzanga-shanga/</referenciasYBibliografia>
+            <referenciasYBibliografia>https://es.wikiloc.com/rutas-observacion-de-fauna/23-ruta-al-bai-de-dzanga-106155356</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>8</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Hito sendero</nombreDehito>
+                <descripcionDehito>Llegar a la cima de la montaña de Buki</descripcionDehito>
+              
+                <coordenadas>
+                    <longitud>17.175350</longitud>
+                    <latitud> 6.120614</latitud>
+                    <altitud>700</altitud>
+                </coordenadas>
+                <distancia>2200</distancia>
+                <galeriaFotografia>                
+                    <fotografia ref_foto = "xml/multimediaXML/foto1.jpg" nombre_foto = "Foto Cataratas"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Hito Bangalusi</nombreDehito>
+                <descripcionDehito>Llegar a la cima de la montaña de Buki</descripcionDehito>
+                <coordenadas>
+                    <longitud>17.25</longitud>
+                    <latitud>6.25</latitud>
+                    <altitud>800</altitud>
+                </coordenadas>
+                <distancia>1500</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto2.jpg" nombre_foto = "Foto Gorila"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Hito cima cataratas</nombreDehito>
+                <descripcionDehito>Llegar a la cima de la montaña de Buki</descripcionDehito>
+                <coordenadas>
+                    <longitud>17.212267</longitud>
+                    <latitud>6.236186</latitud>
+                    <altitud>605</altitud>
+                </coordenadas>
+                <distancia>1900</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto3.jpg" nombre_foto = "Foto Vistas"></fotografia>
+                </galeriaFotografia>
+                <galeriaVideo>
+                    <video ref_video = "xml/multimediaXML/vide1.mp4" nombre_video="Video del Bangalusi"></video>
+                </galeriaVideo>
+            </hito>
+        </hitos>
+    </ruta>
+    <ruta nombre="RutaFaunaSavannah">
+        <!-- Ruta 2 - Fauna y Paisajes de la Sabana -->
+        <tipoRuta>Aventura</tipoRuta>
+        <medioDetransporte>En vehículo todo terreno</medioDetransporte>
+        <fechaDeinicio>2023-12-01</fechaDeinicio>
+        <horaDeinicio>08:00:00</horaDeinicio>
+
+        <duracion>7 dias</duracion>
+        <agencia>Aventuras Salvajes</agencia>
+        <descripcion>Embárcate en un emocionante safari por la sabana de la República Centroafricana, donde podrás admirar la impresionante fauna y los paisajes únicos.</descripcion>
+        <personasAdecuadas>Amantes de la naturaleza y la observación de vida salvaje</personasAdecuadas>
+        <InicioRutaLugar>Bamingui-Bangoran</InicioRutaLugar>
+        <InicioRutaDireccion>Región de la Sabana</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>18.559660</longitud>
+            <latitud>4.907330</latitud>
+            <altitud>375</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://www.civitatis.com/es/jarabacoa/trekking-3-dias-pico-duarte/</referenciasYBibliografia>
+            <referenciasYBibliografia>https://es.wikiloc.com/rutas/outdoor/republica-centroafricana</referenciasYBibliografia>
+            <referenciasYBibliografia>https://serturista.com/republica-centroafricana/parque-nacional-de-manovo-gounda-st-floris/</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>5</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Bangui, República Centroafricana</nombreDehito>
+                <descripcionDehito>Explora la reserva y observa la diversidad de vida salvaje</descripcionDehito>
+                <coordenadas>
+                    <longitud>16.958050</longitud>
+                    <latitud>5.215270</latitud>
+                    <altitud>700</altitud>
+                </coordenadas>
+                <distancia>5000</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto4.jpg" nombre_foto = "Foto Selva"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Parque Nacional de Dzanga Sangha, República Centroafricana</nombreDehito>
+                <descripcionDehito>Ascenso al Monte Kaga-Bandoro para disfrutar de vistas panorámicas de la sabana</descripcionDehito>
+                <coordenadas>
+                    <longitud>16.224760</longitud>
+                    <latitud>6.052990</latitud>
+                    <altitud>800</altitud>
+                </coordenadas>
+                <distancia>7000</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto5.jpg" nombre_foto = "Foto Paisaje"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            
+            <hito>
+                <nombreDehito>Reserva de Fauna de Chinko, República Centroafricana</nombreDehito>
+                <descripcionDehito>Disfruta de una impresionante puesta de sol en Bamingui-Bangoran al final del día</descripcionDehito>
+                <coordenadas>
+                    <longitud>16.587010</longitud>
+                    <latitud>6.440330</latitud>
+                    <altitud>900</altitud>
+                </coordenadas>
+                <distancia>1000</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto6.jpg" nombre_foto = "Foto praderas"></fotografia>
+                </galeriaFotografia>
+            </hito>         
+        </hitos>
+    </ruta>
+<ruta nombre="RutaCascadasBamingui">
+        <!-- Ruta 3 - Cascadas de Bamingui -->
+        <tipoRuta>Naturaleza</tipoRuta>
+        <medioDetransporte>A pie</medioDetransporte>
+        <fechaDeinicio>2023-12-05</fechaDeinicio>
+        <horaDeinicio>09:00:00</horaDeinicio>
+        <duracion>3 horas</duracion>
+        <agencia>ExploraNaturaleza</agencia>
+        <descripcion>Descubre la belleza natural de las cascadas de Bamingui, donde el agua fluye en un entorno exuberante y tranquilo.</descripcion>
+        <personasAdecuadas>Amantes de la naturaleza y excursionistas</personasAdecuadas>
+        <InicioRutaLugar>Bamingui</InicioRutaLugar>
+        <InicioRutaDireccion>Región de Bamingui</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>18.559660</longitud>
+            <latitud>4.907330</latitud>
+            <altitud>375</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://www.easyviajar.com/republica-centroafricana/las-cataratas-de-boali-603</referenciasYBibliografia>
+            <referenciasYBibliografia>https://www.freepik.es/vector-premium/mapa-ciudad-republica-centroafricana-bangui-estilo-retro-color-dorado-esquema-mapa-vector-ilustracion_25738508.htm</referenciasYBibliografia>
+            <referenciasYBibliografia>https://serturista.com/republica-centroafricana/parque-nacional-de-manovo-gounda-st-floris/</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>6</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Cascada principal de Bamingui</nombreDehito>
+                <descripcionDehito>Contempla la majestuosidad de la cascada principal</descripcionDehito>
+                <coordenadas>
+                    <longitud>18.541751</longitud>
+                    <latitud>4.906997</latitud>
+                    <altitud>377</altitud>
+                </coordenadas>
+                <distancia>2000</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto7.jpg" nombre_foto = "Foto lagunas"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Sendero Escénico de Bamingui</nombreDehito>
+                <descripcionDehito>Recorre el sendero escénico que te lleva a través de la exuberante vegetación hasta llegar a las cascadas</descripcionDehito>
+                <coordenadas>
+                    <longitud>18.562660</longitud>
+                    <latitud>4.910330</latitud>
+                    <altitud>378</altitud>
+                </coordenadas>
+                <distancia>1500</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto8.jpg" nombre_foto = "Foto pumba"></fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Área de Picnic junto a las Cascadas</nombreDehito>
+                <descripcionDehito>Disfruta de un merecido descanso y un picnic en el área designada con vistas a las impresionantes cascadas</descripcionDehito>
+                <coordenadas>
+                    <longitud>18.516344</longitud>
+                    <latitud>4.907158</latitud>
+                    <altitud>436</altitud>
+                </coordenadas>
+                <distancia>5000</distancia>
+                <galeriaFotografia>
+                    <fotografia ref_foto = "xml/multimediaXML/foto9.jpg" nombre_foto = "Foto pantano"></fotografia>
+                </galeriaFotografia>
+            </hito>
+        </hitos>
+        
+        
+    </ruta>
+</rutas>

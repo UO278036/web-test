@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Raúl Fernández España" />
+    <meta name ="description" content ="Plantilla html para el escritorio virtual" />
+    <meta name ="keywords" content ="Escritorio Virtual Plantilla" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>ESCRITORIO VIRTUAL SOBRE MI</title>
+    <link rel="icon" type="image/x-icon" href="/multimedia/imagenes/favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+</head>
+
+<body>
+    <header>
+        <!-- Datos con el contenidos que aparece en el navegador -->
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a title = "Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title = "Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+            <a title = "Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title = "Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title = "Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title = "Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title = "Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <h2>Quien soy</h2>
+            <p>Soy Raúl Fernández España, tengo 22 años y soy un estudiante de la escuela de ingeniería del Software de la Universidad de Oviedo</p>
+            <picture>
+                <source media="(max-width: 465px)" srcset="multimedia/imagenes/RaulImg-465.png" />
+                <source media="(min-width: 799px)" srcset="multimedia/imagenes/RaulImg-799.jpeg" />
+                <img src="multimedia/imagenes/RaulImg.jpeg" alt="Imagen Raúl Fernández España" />
+            </picture>
+            <section>
+                <h3>Futuro</h3>
+                <p>En el futuro una vez sea ingeniero de software me gustaría dedicarme al mundo Web, aunque aun no conzoco lo suficiente me gustaría aprender.</p>
+            </section>
+            <section>
+                <h3>Hobbies</h3>
+                <p>Me gusta el cine, las series y la musica, actualmente estoy intentando ver las grandes peliculas de la hostoría</p>
+                <p>
+                    Si quiere ver la lista de peliculas que intento seguir, lo puede hacer a través de <a title="IMDB mejores 250 peliculas" href="https://www.imdb.com/chart/top/">IMDB mejores 250 peliculas</a>.
+                </p>
+                <video controls preload="auto">
+                    <!-- Formato webm -->
+                    <source src="multimedia/videos/Maximo.webm" type="video/webm"/>
+                    <!-- Formato mp4 -->
+                    <source src="multimedia/videos/Maximo.mp4" type="video/mp4"/>
+                </video>
+            </section>
+            <section>
+                <h3>Pasado</h3>
+                <p>Soy de la cuenca minera, mas concretamente de un pueblo llamado Pola de Laviana </p>
+            </section>    
+            <!-- lista no ordenada-->
+            <h2>Aficiones</h2>
+            <p>
+               Aqui tienes mi perfil de Spotify, <a title="Perfil Spotify" href="https://open.spotify.com/user/raul-2804">Perfil Spotify Raúl</a>.
+            </p>
+            <ul>
+                <li>Ver Peliculas </li>
+                <li>Practicar deportes</li>
+                <li>
+                    Escuchar música
+                    <ul>
+                        <li>Rock</li>
+                        <li>Metal</li>
+                        <li>
+                            Pop
+                            <ol>
+                                <li>Michael Jackson</li>
+                                <li>Maggie Rogers</li>
+                            </ol>
+                        </li>
+                    </ul>
+                </li>
+                <li>Cocinar</li>
+                <li>Natación</li>
+            </ul>
+            <!-- lista ordenada-->
+            <h2>Grupos Musicales o Cantantes Favoritos</h2>
+            <ol>
+                <li>Van Halen</li>
+                <li>Judas Priest</li>
+                <li>Pink Floyd</li>
+                <li>Black Sabbath</li>
+                <li>Bob Dylan</li>
+            </ol>
+            <audio controls>
+                <!-- Formatos mp3 y wav en una sola línea -->
+                <source src="multimedia/audios/TheMamas.mp3" type="audio/mp3"/>
+                <source src="multimedia/audios/TheMamas.wav" type="audio/wav"/>
+            </audio>
+            <!-- lista de definición-->
+            <h2>Asignaturas del Grado que más me han Gustado</h2>
+            <dl>
+                <dt>Sistemas Operativos</dt>
+                <dd>Me dio una nueva vision sobre la mayoria de sistemas</dd>
+        
+                <dt>Algoritmia</dt>
+                <dd>Pude ver la gran importancia de las complejidades de los algoritmos.</dd>
+        
+                <dt>Seguridad de Sistemas Informáticos</dt>
+                <dd>Aprendí la importancia de la seguridad informatica y que esta puede ser divertida.</dd>
+        
+                <dt>Ingeniería del Proceso Software</dt>
+                <dd>Pude aprender la importancia de trabajar en equipo y la organización de estos.</dd>
+        
+                <dt>Arquitectura del Software</dt>
+                <dd>Aprendí la importancia de una buena organización, metodologias y buenas arquitecturas que pueden ahorrar muchos dolores de cabeza y tiempo.</dd>
+            </dl>    
+        </article>      
+        <article>
+            <!-- tabla -->
+            <h2>Temperaturas medias de mi ciudad de nacimiento</h2>
+            <p>La siguiente tabla, muestra las temperaturas medias de la ciudad de Oviedo durante los ultimos 10 años</p>
+            <table>
+                <caption>Temperaturas medias anuales</caption>
+                <tr>
+                    <th id="año" scope="col">Año</th>
+                    <th id="temperatura" scope="col">Temperatura</th>
+                </tr>
+                <tr>
+                    <th id="2012" scope="row" headers="año">2012</th>
+                    <td headers="2012 temperatura">12.6</td>
+                </tr>
+                <tr>
+                    <th id="2013" scope="row" headers="año">2013</th>
+                    <td headers="2013 temperatura">12.3</td>
+                </tr>
+                <tr>
+                    <th id="2014" scope="row" headers="año">2014</th>
+                    <td headers="2014 temperatura">13.5</td>
+                </tr>
+                <tr>
+                    <th id="2015" scope="row" headers="año">2015</th>
+                    <td headers="2015 temperatura">13.4</td>
+                </tr>
+                <tr>
+                    <th id="2016" scope="row" headers="año">2016</th>
+                    <td headers="2016 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th id="2017" scope="row" headers="año">2017</th>
+                    <td headers="2017 temperatura">13.3</td>
+                </tr>
+                <tr>
+                    <th id="2018" scope="row" headers="año">2018</th>
+                    <td headers="2018 temperatura">13.1</td>
+                </tr>
+                <tr>
+                    <th id="2019" scope="row" headers="año">2019</th>
+                    <td headers="2019 temperatura">13.2</td>
+                </tr>
+                <tr>
+                    <th id="2020" scope="row" headers="año">2020</th>
+                    <td headers="2020 temperatura">13.8</td>
+                </tr>
+                <tr>
+                    <th id="2021" scope="row" headers="año">2021</th>
+                    <td headers="2021 temperatura">13.0</td>
+                </tr>
+                <tr>
+                    <th id="2022" scope="row" headers="año">2022</th>
+                    <td headers="2022 temperatura">14.0</td>
+                </tr>
+            </table>
+        </article>      
+    </main>
+</body>
+</html>

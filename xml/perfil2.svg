@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points=
+"
+100,390.0
+100,290.0
+350.0,220.0
+700.0,210.0
+750.0,200.0
+750.0,390.0
+100,390.0
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x="100" y="409.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x="350.0" y="409.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">Bangui, República Centroafricana</text>
+<text x="700.0" y="409.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">Parque Nacional de Dzanga Sangha, República Centroafricana</text>
+<text x="750.0" y="409.0" style="writing-mode: tb; glyph-orientation-vertical: 0;">Reserva de Fauna de Chinko, República Centroafricana</text>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="2.0">
+<polyline points=
+"
+100,360.5
+100,260.5
+210.0,190.5
+285.0,180.5
+380.0,200.0
+380.0,360.5
+100,360.5
+"
+style="fill:white;stroke:red;stroke-width:4" />
+<text x="100" y="406.05" style="writing-mode: tb; glyph-orientation-vertical: 0;">Inicio</text>
+<text x="210.0" y="406.05" style="writing-mode: tb; glyph-orientation-vertical: 0;">Hito sendero</text>
+<text x="285.0" y="406.05" style="writing-mode: tb; glyph-orientation-vertical: 0;">Hito Bangalusi</text>
+<text x="380.0" y="406.05" style="writing-mode: tb; glyph-orientation-vertical: 0;">Hito cima cataratas</text>
+</svg>

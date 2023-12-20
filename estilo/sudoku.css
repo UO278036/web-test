@@ -1,0 +1,83 @@
+/*Especificidad:001*/
+body {
+    height: auto;
+    align-items: center;
+    background-color: #ffffff; /* Fondo claro para mejor contraste */
+    color: black;
+}
+/*Especificidad:001*/
+main {
+    height: 40vw;
+    width: 40vw;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 0.1em; /* Pequeño espacio entre celdas para mejor claridad */
+    border: 0.2em solid #007BFF; /* Borde azul para mayor visibilidad */
+}
+/*Especificidad:001*/
+p {
+    padding: 0.3em;
+    margin: 0;
+    text-align: center;
+    border: 0.1em solid #007BFF; /* Borde azul para mayor visibilidad */
+    font-size: 1em;
+    font-weight: bold;
+    color: #007BFF; /* Texto azul para mejor contraste */
+    background-color: #F3F3F3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Especificidad:001 */
+section {
+    display: flex;
+    flex-flow: column;
+    align-items: stretch;
+    justify-content: space-around;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+
+/* Especificidad: 0,1,2 */
+main > p[data-state='clicked'] {
+    color: white;
+    background-color: #ff0000; /* Amarillo para celdas seleccionadas */
+}
+/* Especificidad: 0,1,2 */
+main > p[data-state='correct'] {
+    color: white;
+    background-color: #008cff; /* Verde claro para celdas correctas */
+}
+
+/* Media Queries */
+@media only screen and (max-width: 850px) {
+    /* Especificidad:002 */
+    article h3 {
+        font-size: 1.25ex;
+    }
+    /* Especificidad:001 */
+    section {
+        max-width: 90%;
+    }
+
+    main {
+        height: 100vw;/*Redefiniendo ocupacion de main para moviles*/
+        width: 100vw;/*Redefiniendo ocupacion de main para moviles*/
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE rutas SYSTEM "rutas.dtd">
+<rutas>
+    <ruta nombre = "CentroAfriacana" >
+        <tipoRuta>Naturaleza</tipoRuta>
+        <medioDetransporte>A pie</medioDetransporte>
+        <fechaDeinicio>25-11-2023</fechaDeinicio>
+        <horaDeinicio>13:00 A.M.</horaDeinicio>
+        <duracion>4</duracion>
+        <agencia>Viaboo</agencia>
+        <descripcion> República Centroafricana es una aventura emocionante y única. Es una experiencia única que ofrece la oportunidad de descubrir algunos de los mejores paisajes y 
+        culturas de la región. Sin embargo, los viajeros deben estar preparados para los retos de la carretera.</descripcion>
+        <personasAdecuadas>Personas aventureras y sin miedo a la Naturaleza</personasAdecuadas>
+        <InicioRutaLugar>BanguiBoda</InicioRutaLugar>
+        <InicioRutaDireccion>Provincia de Bangui</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>20.93</longitud>
+            <latitud>6.611</latitud>
+            <altitud>700</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://viaboo.com/es/roadtrips/Africa/Central_Africa/CAR/Grandtour</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>3.2</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Hito Bangalusi</nombreDehito>
+                <descripcionDehito>Llegar a la cima de la montaña de Buki</descripcionDehito>
+                <coordenadas>
+                    <longitud>7</longitud>
+                    <latitud>7</latitud>
+                    <altitud>2</altitud>
+                </coordenadas>
+                <distancia>22</distancia>
+                <galeriaFotografia>
+                    <fotografia>Foto del hito Bangalusi</fotografia>
+                </galeriaFotografia>
+            </hito>
+            <hito>
+                <nombreDehito>Hito Bangalusi</nombreDehito>
+                <descripcionDehito>Llegar a la cima de la montaña de Buki</descripcionDehito>
+                <coordenadas>
+                    <longitud>7</longitud>
+                    <latitud>7</latitud>
+                    <altitud>2</altitud>
+                </coordenadas>
+                <distancia>5</distancia>
+                <galeriaFotografia>
+                    <fotografia>Foto del hito Bangalusi</fotografia>
+                </galeriaFotografia>
+            </hito>
+        </hitos>
+    </ruta>
+    <ruta nombre="RutaFaunaSavannah">
+        <!-- Ruta 2 - Fauna y Paisajes de la Sabana -->
+        <tipoRuta>Aventura</tipoRuta>
+        <medioDetransporte>En vehículo todo terreno</medioDetransporte>
+        <fechaDeinicio>01-12-2023</fechaDeinicio>
+        <horaDeinicio>8:00 A.M.</horaDeinicio>
+        <duracion>7</duracion>
+        <agencia>Aventuras Salvajes</agencia>
+        <descripcion>Embárcate en un emocionante safari por la sabana de la República Centroafricana, donde podrás admirar la impresionante fauna y los paisajes únicos.</descripcion>
+        <personasAdecuadas>Amantes de la naturaleza y la observación de vida salvaje</personasAdecuadas>
+        <InicioRutaLugar>Bamingui-Bangoran</InicioRutaLugar>
+        <InicioRutaDireccion>Región de la Sabana</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>20.684</longitud>
+            <latitud>6.062</latitud>
+            <altitud>500</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://aventurassalvajes.com/rutas/safari-sabana</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>4.7</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Reserva de Fauna Silvestre Bamingui-Bangoran</nombreDehito>
+                <descripcionDehito>Explora la reserva y observa la diversidad de vida salvaje</descripcionDehito>
+                <coordenadas>
+                    <longitud>20.684</longitud>
+                    <latitud>6.062</latitud>
+                    <altitud>505</altitud>
+                </coordenadas>
+                <distancia>5</distancia>
+                <galeriaFotografia>
+                    <fotografia>Foto de la reserva de fauna silvestre</fotografia>
+                </galeriaFotografia>
+            </hito>
+
+        </hitos>
+    </ruta>
+<ruta nombre="RutaCascadasBamingui">
+        <!-- Ruta 3 - Cascadas de Bamingui -->
+        <tipoRuta>Naturaleza</tipoRuta>
+        <medioDetransporte>A pie</medioDetransporte>
+        <fechaDeinicio>05-12-2023</fechaDeinicio>
+        <horaDeinicio>9:00 A.M.</horaDeinicio>
+        <duracion>3</duracion>
+        <agencia>ExploraNaturaleza</agencia>
+        <descripcion>Descubre la belleza natural de las cascadas de Bamingui, donde el agua fluye en un entorno exuberante y tranquilo.</descripcion>
+        <personasAdecuadas>Amantes de la naturaleza y excursionistas</personasAdecuadas>
+        <InicioRutaLugar>Bamingui</InicioRutaLugar>
+        <InicioRutaDireccion>Región de Bamingui</InicioRutaDireccion>
+        <coordenadas>
+            <longitud>20.866</longitud>
+            <latitud>6.423</latitud>
+            <altitud>300</altitud>
+        </coordenadas>
+        <referenciasYBibliografias>
+            <referenciasYBibliografia>https://exploranaturaleza.com/rutas/cascadas-bamingui</referenciasYBibliografia>
+        </referenciasYBibliografias>
+        <recomendacioRuta>4.5</recomendacioRuta>
+        <hitos>
+            <hito>
+                <nombreDehito>Cascada principal de Bamingui</nombreDehito>
+                <descripcionDehito>Contempla la majestuosidad de la cascada principal</descripcionDehito>
+                <coordenadas>
+                    <longitud>20.866</longitud>
+                    <latitud>6.423</latitud>
+                    <altitud>305</altitud>
+                </coordenadas>
+                <distancia>2</distancia>
+                <galeriaFotografia>
+                    <fotografia>Foto de la cascada principal</fotografia>
+                </galeriaFotografia>
+            </hito>
+
+        </hitos>
+    </ruta>
+</rutas>

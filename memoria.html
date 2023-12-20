@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+ 
+    <meta charset="UTF-8" />
+    <link rel="icon" href="multimedia/imagenes/favicon.ico"/>
+    <title>Escritorio Virtual - Memoria</title>
+
+    <meta name ="author" content ="Raúl Fernández España" />
+
+    <meta name ="description" content ="Documento de juego memoria" />
+
+    <meta name ="keywords" content ="Memoria, juego" />
+
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/memoria.css" />
+
+    <script src="js/memoria.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Escritorio Virtual</h1>
+        <nav>
+        <a title = "Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title = "Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+            <a title = "Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title = "Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title = "Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title = "Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title = "Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <section>
+        <h2>Juegos</h2>
+        <ul>
+            <li><a tabindex="8" accesskey="E" href="memoria.html" title="Memoria">Memoria</a></li>
+            <li><a tabindex="9" accesskey="U" href="sudoku.html" title="Sudoku">Sudoku</a></li>
+            <li><a tabindex="10" accesskey="C" href="crucigrama.php" title="Crucigrama">Crucigrama</a></li>
+            <li><a tabindex="11" accesskey="P" href="api.html" title="Reproductor">Reproductor</a></li>    
+            <li><a tabindex="12" accesskey="D" href="php/videoclub.php" title="Videoclub">Videoclub</a></li>      
+        </ul>
+    </section>
+    <section>
+        <h2>Juego de Memoria</h2>
+        <script>
+            var game= new Memoria();
+        </script>
+    </section>
+    
+</body>
+
+</html>

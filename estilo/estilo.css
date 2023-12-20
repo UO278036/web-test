@@ -1,0 +1,229 @@
+/* Raúl Fernández España UO278036*/
+/*especificdad 001*/
+body {
+    font-family: Arial, "Arial Narrow", sans-serif;
+    font-size: 1.3em;
+    color: #003366; /* Cambié el color del texto principal */
+    background-color: #ffffff; /* Cambié el color de fondo */
+}
+
+header {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    background-color: #003366; /* Cambié el color de fondo del encabezado */
+    color: #FFFFFF;
+}
+
+/*especificidad 001*/
+h1 {
+    /*hereda font-family de body*/
+    /*hereda background-color de header*/
+    /*hereda color de header*/
+    font-size: 3em;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*especificidad 001*/
+h2 {
+    /*hereda font-family de body*/
+    background-color: #99CCFF; /* Cambié el color de fondo */
+    color: #003366; /* Cambié el color del texto */
+    font-size: 2em;
+    font-weight: 700;
+}
+
+/*especificidad 001*/
+h3 {
+    /*hereda font-family de body*/
+    background-color: #B3E0FF; /* Cambié el color de fondo */
+    color: #003366; /* Cambié el color del texto */
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+/*especificidad 001*/
+ul {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    list-style-type: square; /* Cambié el estilo de la lista a cuadrados */
+}
+
+/*especificidad 012*/
+ul > li:nth-child(3) {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    /*hereda color de body*/
+    font-weight: 700;
+}
+
+/*especificidad 001*/
+ol {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    /*hereda color de body*/
+    list-style-type: lower-roman; /* Cambié el estilo de la lista ordenada */
+}
+
+/*especificidad 001*/
+dt {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    /*hereda color de body*/
+    font-weight: 700;
+}
+
+/*especificidad 001*/
+table {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    border-color: #99CCFF; /* Cambié el color del borde de la tabla */
+    border-style: solid;
+    border-collapse: collapse;
+    background-color: #003366; /* Cambié el color de fondo de la tabla */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+/*especificidad 001*/
+th {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de table*/
+    /*hereda color de table*/
+    border-color: #99CCFF; /* Cambié el color del borde de las celdas del encabezado */
+    border-style: solid;
+}
+
+/*especificidad 001*/
+td {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    border-color: #99CCFF; /* Cambié el color del borde de las celdas */
+    border-style: solid;
+    background-color: #E6F7F7; /* Cambié el color de fondo de las celdas */
+    color: #003366; /* Cambié el color del texto en las celdas */
+}
+
+/*especificidad 001*/
+dd {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    /*hereda color de body*/
+    display: list-item;
+}
+
+/*especificidad 002*/
+table caption {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    background-color: #E6F7F7; /* Cambié el color de fondo del título de la tabla */
+    color: #003366; /* Cambié el color del texto del título de la tabla */
+    font-weight: 700;
+}
+
+/*especificidad 001*/
+video {
+    max-width: 40%;
+    height: auto;
+}
+
+/*especificidad 001*/
+img {
+    max-width: 40%;
+    height: auto;
+}
+
+/*espercificidad 011*/
+a:link {
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    color:#3819E6;
+    background-color: #FFFFFF;
+}
+
+/*espercificidad 011*/
+a:visited{
+    /*hereda font-family de body*/
+    /*hereda font-size de body*/
+    /*hereda background-color de body*/
+    color:#4b0082;
+    background-color: #FFFFFF;
+}
+
+
+/*especificidad 013*/
+header > nav > a:link {
+    /*hereda font-family de body*/
+    /*hereda font-size de nav*/
+    /*hereda background-color de header*/
+    color: #FFFFFF;
+    background-color: #003366;
+}
+
+/*especificidad 013*/
+header > nav > a:visited {
+    /*hereda font-family de body*/
+    /*hereda font-size de nav*/
+    /*hereda background-color de header*/
+    color: #FFFFFF;
+    background-color: #003366;
+}
+
+/*especificidad 002*/
+ul > a {
+    background-color: #003366;
+}
+
+
+/*especificidad 001*/
+nav {
+    display: flex;
+    justify-content: space-around; /* Distribuye los elementos de manera equitativa */
+}
+
+/*especificidad 002*/
+nav a {
+    text-decoration: none;
+    color: white; /* Cambié el color del texto según tus preferencias */
+    background-color: #003366;
+   
+}
+
+/*especificidad 012*/
+nav a:hover {
+    color: #FFFFFF;
+    background-color: #555; /* Cambié el color de fondo al pasar el ratón por encima */
+}
+@media screen and (max-width: 768px) {
+    /* Especificidad en media query: sigue siendo 001 para cada regla definida aquí */
+
+    body {
+        font-size: 1em; /* Redefiniendo 'font-size' del 'body' para pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2em; /* Redefiniendo 'font-size' de 'h1' para pantallas pequeñas */
+    }
+
+    nav {
+        flex-wrap: wrap; /* Permite que los elementos de la navegación se ajusten en varias líneas */
+    }
+
+    video, img {
+        max-width: 100%; /* Redefiniendo 'max-width' de 'video' e 'img' para pantallas pequeñas */
+    }
+
+    header {
+        background-color: #005792; /* Redefiniendo 'background-color' del 'header' para pantallas pequeñas */
+    }
+}
+
+
+

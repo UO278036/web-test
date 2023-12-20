@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Raúl Fernánez España" />
+    <meta name ="description" content ="Agenda de formula uno" />
+    <meta name ="keywords" content ="Agenfa, formula" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>Escritorio Virtual - Agenda</title>
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous"></script>
+    <script src="js/agenda.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a title = "Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title = "Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+            <a title = "Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title = "Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title = "Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title = "Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title = "Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+    <h2>Agenda</h2>
+    <button onclick="agenda.cargarDatos()">Cargar carreras</button>
+    <script>
+        let agenda = new Agenda();
+    </script>
+</body>
+</html>

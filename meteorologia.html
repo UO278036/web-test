@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+
+<html lang="es">
+<head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8" />
+    <meta name ="author" content ="Raúl Fernánez España" />
+    <meta name ="description" content ="Plantilla html para el escritorio virtual" />
+    <meta name ="keywords" content ="Escritorio Virtual Plantilla" />
+    <meta name ="viewport" content ="width=device-width, initial-scale=1.0" />
+
+    <title>ESCRITORIO VIRTUAL METEOROLOGIA</title>
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="estilo/layout.css" />
+    <script src="js/pais.js"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a title = "Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title = "Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+            <a title = "Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title = "Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title = "Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title = "Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title = "Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+
+    <h2>Meteorología</h2>
+    <script>
+        var centroafrica= new Pais("Republica Centroafricana","Bangui",5455000);
+        centroafrica.setOtherInfo("República presidencial","6.611111, 20.939444",
+        "Cristianismo");
+        
+        document.write("<p><h3>País: "+centroafrica.getNombre()+"</h3></p><p>Capital: "+
+            centroafrica.getCapital()+"</p>");
+            centroafrica.getCoordenadas();
+        document.write(centroafrica.getOtherInfo());
+
+        document.write("<button onclick = 'centroafrica.creaData()'>Ver previsión</button>");
+        
+    </script>
+</body>
+</html>

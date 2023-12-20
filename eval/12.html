@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Raúl Fernández España">
+        <meta name="description" content="Documento para consultas a un videoclub">
+        <meta name="keywords" content="Videoclub, Consultas">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Escritorio Virtual - Videoclub</title>
+        <link rel="stylesheet" type="text/css" href="../estilo/estilo.css">
+        <link rel="icon" href="../multimedia/imagenes/favicon.ico">
+    </head>
+    <body>
+    <header>
+            <h1>Escritorio Virtual</h1>
+            <nav>
+            <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="../index.html">Inicio</a>
+                <a title="Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="../sobremi.html">Sobre Mi</a>
+                <a title="Acceda a la página de Noticias" accesskey="N" tabindex="3" href="../noticias.html">Noticias</a>
+                <a title="Acceda a la página de Agenda" accesskey="A" tabindex="4" href="../agenda.html">Agenda</a>
+                <a title="Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="../meteorologia.html">Meteorología</a>
+                <a title="Acceda a la página de Viajes" accesskey="V" tabindex="6" href="../viajes.php">Viajes</a>
+                <a title="Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="../juegos.html">Juegos</a>
+            </nav>
+    </header>
+        <section>
+            <h2>Juegos</h2>
+            <ul>
+                <li><a tabindex="8" accesskey="E" href="../memoria.html" title="Memoria">Memoria</a></li>
+                <li><a tabindex="9" accesskey="U" href="../sudoku.html" title="Sudoku">Sudoku</a></li>
+                <li><a tabindex="10" accesskey="C" href="../crucigrama.php" title="Crucigrama">Crucigrama</a></li>
+                <li><a tabindex="11" accesskey="P" href="../api.html" title="Reproductor">Reproductor</a></li>    
+                <li><a tabindex="12" accesskey="P" href="videoclub.php" title="Videoclub">Videoclub</a></li>    
+            </ul>
+        </section>
+    <main>
+        <h2>Consulta de disponibilidad de películas</h2>
+        <!-- Formularios para importar, exportar, y consultar películas -->
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="importarCSV">Importar CSV para la carga de datos y descargar datos insertados</label>
+            <input id="importarCSV" name="importarCSV" type="file" accept=".csv">
+            <input type="submit" name="importar_csv" value="Importar">
+        </form>
+        <form action="#" method="post">
+            <label for="exportarCSV">Exportar datos del videoclub</label>
+            <input id="exportarCSV" type="submit" name="exportar_csv" value="Exportar">
+        </form>
+        <form action="#" method="post">
+            <label for="director">Consultar películas del director:</label>
+            <input id="director" name="director" type="text" placeholder="Ejemplo: Spielberg">
+            <input id="consultarPorDirector" type="submit" name="consultar_por_director" value="Buscar">
+        </form>
+        <form action="#" method="post">
+            <label for="consultaInicial">Consultar películas</label>
+            <input id="consultaInicial" type="submit" name="consulta_inicial" value="Buscar">
+        </form>
+        <article><h3>Películas disponibles</h3><ul><li>Película: The Aviator</li><li>Película: Goodfellas</li><li>Película: The Departed</li><li>Película: Indiana Jones</li><li>Película: Pulp Fiction</li><li>Película: Kill Bill</li><li>Película: Interstellar</li></ul></article>        <article><h3>Películas en alquiler</h3><ul><li>Película: Inception - Fecha de Devolución: 2024-01-10</li><li>Película: The Wolf of Wall Street - Fecha de Devolución: 2024-01-12</li><li>Película: The Dark Knight - Fecha de Devolución: 2024-01-11</li><li>Película: Star Wars - Fecha de Devolución: 2024-01-13</li><li>Película: Schindler's List - Fecha de Devolución: 2024-01-16</li><li>Película: E.T. - Fecha de Devolución: 2024-01-18</li><li>Película: Jurassic Park - Fecha de Devolución: 2024-01-14</li><li>Película: Django Unchained - Fecha de Devolución: 2024-01-15</li></ul></article>                <h2>Añadir Nuevo Cliente</h2>
+        <form action="biblioteca.php" method="post">
+            <label for="idCliente">ID Cliente:</label>
+            <input type="text" id="idCliente" name="idCliente" required="">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required="">
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" id="apellido" name="apellido" required="">
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required="">
+
+            <input type="submit" name="añadir_cliente" value="Añadir Cliente">
+        </form>
+
+    </main>
+    
+</body></html>

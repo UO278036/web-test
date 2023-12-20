@@ -1,0 +1,85 @@
+/* Especificidad:001 */
+body {
+    height: auto;
+    align-items: center;
+    background-color: white; /* Fondo blanco */
+    color: black;
+}
+
+/* Especificidad:001 */
+section {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: space-around;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* Especificidad:002 */
+section article {
+    flex: 1 0 20%;
+    max-width: 20%;
+    margin: 2.5%;
+    
+    box-sizing: content-box;
+    transform: scale(1);
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+    box-shadow: 1ex 1ex 1ex rgba(0,0,0,.3);
+    border-radius: 2ex;
+    background: #87CEEB; /* Color claro accesible */
+    color: black;
+}
+
+/* Especificidad:002 */
+article img {
+    width: 100%;
+    display: block; 
+    backface-visibility: hidden;
+    border-radius: 2ex;
+    background: #87CEEB; /* Color claro accesible */
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* Especificidad:002 */
+article h3 {
+    width: 100%;
+    font-size: 2ex;
+    text-align: center;
+    flex-basis: auto;
+    backface-visibility: hidden;
+    border-radius: 0.3em;
+    color: black; /* Color de texto accesible */
+    background: #87CEEB; /* Color claro accesible */
+}
+
+/* Especificidad:011 */
+article:nth-of-type(1) {
+    flex: 2;
+}
+
+/* Especificidad:002 */
+section > h2 {
+    width: 100%;
+    text-align: center;
+}
+
+/* Data Attribute Selectors */
+/* Especificidad:011 */
+article[data-state='flip'] {
+    transform: rotateY(180deg);
+}
+
+/* Especificidad:011 */
+article[data-state='revealed'] {
+    transform: rotateY(180deg);
+}
+
+/* Especificidad:011 */
+article[data-state='blocked'] {
+    transform: none;
+}

@@ -1,0 +1,33 @@
+/*Especificidad 001*/
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+nav{
+    display: flex; /* Esto asegura que los enlaces estén alineados horizontalmente */
+    gap: 1em;
+    
+}
+
+
+@media (max-width: 465px) {
+    /*Especificidad 001*/
+    header {
+        flex-direction: column; /*Redefiniendo la dirección del flex, antes row ahora column*/
+        gap: .5em; /*Redefiniendo el gap de fila y columna de 2em a .5em*/
+    }
+
+    /*Especificidad 001*/
+    nav {
+        flex-direction: column;     /*Redefiniendo la dirección del flex, antes row ahora column */
+    }
+
+    /*Especificidad 011*/
+    section:first-of-type {
+        flex-direction: column; /*Redefiniendo la direccion de row a column*/
+    }
+}

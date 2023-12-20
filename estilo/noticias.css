@@ -1,0 +1,58 @@
+/* Especificidad 001 */
+header {
+    color: black;
+    background-color: #f0f0f0;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Especificidad 002 */
+nav a {
+
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* Especificidad 002 */
+nav a:hover {
+    color: #007bff;
+    background-color: #f0f0f0;
+}
+
+/* Especificidad 011 */
+section {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Especificidad 012 */
+section h3 {
+    color: #000000;
+    background-color: #99CCFF;
+    margin-bottom: 5px;
+}
+
+/* Especificidad 012 */
+section p {
+    margin-bottom: 5px;
+}
+
+/* Especificidad 002 */
+button {
+    background-color: #0056b3;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Especificidad 002 */
+button:hover {
+    color: #f0f0f0;
+    background-color: #0056b3;
+}

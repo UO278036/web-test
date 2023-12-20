@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="es"><head>
+    <!-- Datos que describen el documento -->
+    <meta charset="UTF-8">
+    <meta name="author" content="Raúl Fernánez España">
+    <meta name="description" content="Plantilla html para el escritorio virtual">
+    <meta name="keywords" content="Escritorio Virtual Plantilla">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ESCRITORIO VIRTUAL METEOROLOGIA</title>
+    <link rel="icon" href="/multimedia/imagenes/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="estilo/estilo.css">
+    <script src="js/pais.js"></script>
+
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Datos con el contenidos que aparece en el navegador -->
+    <header>
+        <h1>Escritorio virtual</h1>
+        <nav>
+            <a title="Acceda a la página de Inicio" accesskey="I" tabindex="1" href="index.html">Inicio</a>
+            <a title="Acceda a la página de Sobre Mi" accesskey="S" tabindex="2" href="sobremi.html">Sobre Mi</a>
+            <a title="Acceda a la página de Noticias" accesskey="N" tabindex="3" href="noticias.html">Noticias</a>
+            <a title="Acceda a la página de Agenda" accesskey="A" tabindex="4" href="agenda.html">Agenda</a>
+            <a title="Acceda a la página de Meteorología" accesskey="M" tabindex="5" href="meteorologia.html">Meteorología</a>
+            <a title="Acceda a la página de Viajes" accesskey="V" tabindex="6" href="viajes.php">Viajes</a>
+            <a title="Acceda al formulario de Juegos" accesskey="J" tabindex="7" href="juegos.html">Juegos</a>
+        </nav>
+    </header>
+
+    <h2>Meteorología</h2>
+    <script>
+        var centroafrica= new Pais("Republica Centroafricana","Bangui",5455000);
+        centroafrica.setOtherInfo("República presidencial","6.611111, 20.939444",
+        "Cristianismo");
+        
+        document.write("<p><h3>País: "+centroafrica.getNombre()+"</h3></p><p>Capital: "+
+            centroafrica.getCapital()+"</p>");
+            centroafrica.getCoordenadas();
+        document.write(centroafrica.getOtherInfo());
+
+        document.write("<button onclick = 'centroafrica.creaData()'>Ver previsión</button>");
+        
+    </script><p></p><h3>País: Republica Centroafricana</h3><p></p><p>Capital: Bangui</p><p>Coordenadas de la capital del pais: 6.611111, 20.939444</p><ul>
+                    <li>Población: 5455000</li>
+                    <li>Forma de gobierno: República presidencial</li>
+                    <li>Religión mayoritaria: Cristianismo</li>
+                </ul><button onclick="centroafrica.creaData()">Ver previsión</button>
+
+<main data-type="meteo"><h4 data-type="meteo">Datos meteorológicos de los próximos 5 días</h4><section data-type="meteo"><h4>20/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/04n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 24.48 ºC / 24.48ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 64%</p></section><section data-type="meteo"><h4>21/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/04n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 24.19 ºC / 24.19ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 66%</p></section><section data-type="meteo"><h4>22/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/03n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 23.25 ºC / 23.25ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 76%</p></section><section data-type="meteo"><h4>23/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/04n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 24.8 ºC / 24.8ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 34%</p></section><section data-type="meteo"><h4>24/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/04n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 24.6 ºC / 24.6ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 32%</p></section><section data-type="meteo"><h4>25/12/2023</h4>
+                                           <p><img src="http://openweathermap.org/img/w/04n.png" alt="Weather Icon"></p>
+                                           <p> Temperatura: 23.83 ºC / 23.83ºC</p>
+                                           <p>Lluvia: 0 mm</p>
+                                           <p>Humedad: 38%</p></section></main></body></html>
