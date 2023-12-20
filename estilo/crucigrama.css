@@ -117,7 +117,7 @@ section[data-type=ayuda] > article {
 @media  screen and (max-width: 1200px) {
     /*especificidad 011*/
     section[data-type=botonera]{
-        display: flex; /* le cambio el display para que se vea la botonera en pantallas de  tablet y movil */
+        display: flex; /* Redefino discplay para botonera en moviles se error de CSS */
     }
 }
 

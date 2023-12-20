@@ -179,6 +179,7 @@ header > nav > a:visited {
 /*especificidad 002*/
 ul > a {
     background-color: #003366;
+    color: #FFFFFF;
 }
 
 
@@ -203,25 +204,21 @@ nav a:hover {
 }
 @media screen and (max-width: 768px) {
     /* Especificidad en media query: sigue siendo 001 para cada regla definida aquí */
-
+    /*especificidad 011*/
     body {
         font-size: 1em; /* Redefiniendo 'font-size' del 'body' para pantallas pequeñas */
     }
-
+    /*especificidad 011*/
     h1 {
         font-size: 2em; /* Redefiniendo 'font-size' de 'h1' para pantallas pequeñas */
     }
-
+    /*especificidad 011*/
     nav {
         flex-wrap: wrap; /* Permite que los elementos de la navegación se ajusten en varias líneas */
     }
-
+    /*especificidad 011*/
     video, img {
         max-width: 100%; /* Redefiniendo 'max-width' de 'video' e 'img' para pantallas pequeñas */
-    }
-
-    header {
-        background-color: #005792; /* Redefiniendo 'background-color' del 'header' para pantallas pequeñas */
     }
 }
 
